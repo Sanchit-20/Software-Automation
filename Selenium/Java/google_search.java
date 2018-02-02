@@ -22,7 +22,8 @@ public class google_search {
     	String s=scan.nextLine();
     	WebElement w= driver.findElement(By.id("lst-ib"));
     	w.sendKeys(s);
-    	w.sendKeys(Keys.RETURN);  // used to hit enter
+    	w.sendKeys(Keys.ENTER);  // used to hit enter
+       w.sendKeys(Keys.RETURN);
     	System.out.println("Bye !!");
     	scan.close();
     	
